@@ -23,14 +23,226 @@
                 </svg>
             <div id="notifications"></div>
         </div>
+        <img src="images/member-1.jpg" alt="Profile Pic">
+        <h3>Josh Sullivan</h3>
     </header>
 
     <nav>
-
+        <a href="#">
+            <img src="icons/icon-dashboard.svg" alt="Dashboard">
+        </a>
+        <a href="#">
+            <img src="icons/icon-members.svg" alt="members">
+        </a>
+        <a href="#">
+            <img src="icons/icon-visits.svg" alt="Visits">
+        </a>
+        <a href="#">
+            <img src="icons/icon-settings.svg" alt="Settings">
+        </a>
     </nav>
 
     <main>
-        
+        <div class="row-dashboard">
+            <h2 class="headline">Dashboard</h2>
+            <div class="row-dashboard-search">
+                <input type="search" placeholder="Search">
+            </div>
+        </div>
+
+        <div class="row-alert" id="alert">
+            <!-- JS will insert alert here -->
+        </div>
+
+        <section class="row-traffic">
+            <div class="traffic-header">
+                <h3>TRAFFIC</h3>
+                <ul class="traffic-nav">
+                    <li class="traffic-nav-link">Hourly</li>
+                    <li class="traffic-nav-link">Daily</li>
+                    <li class="traffic-nav-link active">Weekly</li>
+                    <li class="traffic-nav-link">Monthly</li>
+                </ul>
+            </div>
+            <div class="widget-container-full">
+                <!-- element line graph will attach to -->
+                <canvas id="traffic-chart"></canvas>
+            </div>
+        </section>
+
+        <section class="row-daily">
+            <h3>DAILY TRAFFIC</h3>
+            <div class="widget-container-half">
+                <!-- element bar graph will attach to -->
+                <canvas id="daily-chart"></canvas>
+            </div>
+        </section>
+
+        <section class="row-mobile-users">
+            <h3>MOBILE USERS</h3>
+            <div class="widget-container-half">
+                <!-- element dougnut graph will attach to -->
+                <canvas id="mobile-users"></canvas>
+            </div>
+        </section>
+
+        <section class="row-social-stats">
+            <h3>SOCIAL STATS</h3>
+
+            <div class="social-container">
+                <div class="social-image">
+                    <!-- image goes here-->
+                    <img src="icons/icon-twitter.svg" alt="Twitter">
+                </div>
+                <div class="social-text">
+                    <p>Twitter</p>
+                    <p>10,345</p>
+                </div>
+            </div>
+            <div class="social-container">
+                <div class="social-image">
+                    <!-- image goes here -->
+                    <img src="icons/icon-facebook.svg" alt="Facebook">
+                    <!-- <img src="icons/icon-google-plus.svg" alt="Facebook"> -->
+                </div>
+                <div class="social-text">
+                    <p>Facebook</p>
+                    <p>8,739</p>
+                </div>
+            </div>
+            <div class="social-container">
+                <div class="social-image">
+                    <!-- iamge goes here -->
+                    <img src="icons/icon-google-plus.svg" alt="Google Plus">
+                </div>
+                <div class="social-text">
+                    <p>Google+</p>
+                    <p>2,530</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="row-new-members">
+            <h3>NEW MEMBERS</h3>
+
+            <div class="members-container">
+                <div class="members-image">
+                    <!-- image goes here -->
+                </div>
+                <div class="members-text">
+                    <p>Victoria Chambers</p>
+                    <a href="#">victoria.chambers80@example.com</a>
+                </div>
+                <div class="members-date">
+                    <p>10/15/15</p>
+                </div>
+            </div>
+            <div class="members-container">
+                <div class="members-image">
+                    <!-- image goes here -->
+                </div>
+                <div class="members-text">
+                    <p>Dale Byrd</p>
+                    <a href="#">dale.byrd52@example.com</a>
+                </div>
+                <div class="members-date">
+                    <p>10/15/15</p>
+                </div>
+            </div>
+            <div class="members-container">
+                <div class="members-image">
+                    <!-- image goes here -->
+                </div>
+                <div class="members-text">
+                    <p>Dawn Wood</p>
+                    <a href="#">dawn.wood16@example.com</a>
+                </div>
+                <div class="members-date">
+                    <p>10/15/15</p>
+                </div>
+            </div>
+            <div class="members-container">
+                <div class="members-image">
+                    <!-- image goes here-->
+                </div>
+                <div class="members-text">
+                    <p>Dan Oliver</p>
+                    <a href="#">dan.oliver82@example.com</a>
+                </div>
+                <div class="members-date">
+                    <p>10/15/15</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="row-recent-activity">
+            <h3>RECENT ACTIVITY</h3>
+
+            <div class="recent-activity-container">
+                <div class="recent-activity-images">
+                <!-- image goes here -->
+                </div>
+                <div class="recent-activity-text">
+                    <p>Victoria Chambers commented on YourApp's SEO tips</p>
+                    <p>4 hours ago</p>
+                </div>  
+            </div>
+            <div class="recent-activity-container">
+                <div class="recent-activity-image">
+                    <!-- image goes here -->
+                </div>
+                <div class="recent-activity-text">
+                    <p>Dale Byrd like the post Facebook's Changes for 2016</p>
+                    <p>5 hours ago</p>
+                </div>
+            </div>
+            <div class="recent-activity-container">
+                <div class="recent-activity-image">
+                    <!-- image goes here-->
+                </div>
+                <div class="recent-activity-text">
+                    <p>Dawn Wood commented on Facebook's Changes for 2016</p>
+                    <p>5 hours ago</p>
+                </div>
+            </div>
+            <div class="recent-activity-container">
+                <div class="recent-activity-image">
+                    <!-- image goes here-->
+                </div>
+                <div class="recent-activity-text">
+                    <p>Dan Oliver posted YourApp's SEO tips</p>
+                    <p>1 day ago</p>
+                </div>
+            </div>
+        </section>
+
+        <div section="row-message-members">
+            <h3>MESSAGE USER</h3>
+
+            <form class="widget-container">
+                <input type="text" placeholder="Search for user" class="form-field" id="userField">
+                <textarea placeholder="Message for User" class="form-area"  id="messageField"></textarea>
+                <button class="button-primary" id="send">Send</button>
+            </form>
+        </section>
+
+        <section class="row-settings">
+            <h3>SETTINGS</h3>
+
+            <div class="settings-toggle">
+                <!-- custom CSS toggle code-->
+
+                <!-- custom CSS toggle code-->
+            </div>
+            <select class="form-field" id="timezone">
+                <option disabled selected>Select a Timezone</option>
+                <option>Eastern</option>
+            </select>
+            <div class="settings-button">
+                <button class="button-primary" id="send">SAVE</button>
+                <button class="button-disabled" id="cancel">CANCEL</button>
+            </div>
+        </section>
     </main>
 
 </body>
