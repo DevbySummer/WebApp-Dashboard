@@ -3,11 +3,11 @@
   Base Element Styles
 ==================================== */
 
-.widget-container-full img,
+/* .widget-container-full img,
 .widget-container-half img,
 .social-image img {
     height: 50px;
-}
+} */
 
 * {
     margin: 0;
@@ -19,6 +19,14 @@ body {
     line-height: 1.2;
     letter-spacing: 1.1px;
     color: #383838;
+}
+
+h3 {
+    display: flex;
+    font-size: 12px;
+    letter-spacing: .5px;
+    margin-right: auto;
+    align-self: center;
 }
 
 /* ================================= 
@@ -38,8 +46,10 @@ body {
     'main';
 }
 
-.row {
-    width: 90%;  /* NOT WORKING!!!!! */
+main {
+    /* width: 90%;  NOT WORKING!!!!! */
+    margin-left: 7px;
+    margin-right: 7px;
 }
 
 /* ---- Icon styles ---- */
@@ -118,13 +128,108 @@ main {
 
 .row-dashboard {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 45px;
 }
 
 .headline {
     font-size: 19px;
-    align-self: center;
     margin-left: 5px;
+}
+
+.row-dashboard-search {
+    padding-bottom: 5px;
+}
+
+input[type=text] {
+    width: 60px; /* NOT WORKING!!!! */
+}
+
+/* ---- Traffic---- */
+
+.row-traffic {
+    margin-top: 5px;
+}
+
+.traffic-header {
+    display: flex;
+}
+
+.traffic-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    /* margin-right: 5px; */
+}
+
+.traffic-nav-link {
+    font-size: 11px;
+    margin-right: 4px;
+}
+
+.traffic-nav-link:nth-of-type(3) {
+    background-color: green;
+    padding: 5px 3px;
+    border-radius: 35%;
+    color: #fff;
+}
+
+.widget-container-full {
+    margin-top: 15px;
+    background-color: red;
+}
+
+/* ---- Daily---- */
+
+.row-daily {
+    margin-top: 15px;
+}
+
+.widget-container-half {
+    margin-top: 15px;
+    height: 100px;
+    background-color: brown;
+}
+
+/* ---- Mobile User---- */
+
+.row-mobile-users {
+    margin-top: 15px;
+}
+
+/* ---- social-stats---- */
+
+.row-social-stats {
+    margin-top: 15px;
+}
+
+.social-container-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.social-container {
+    display: flex;
+
+}
+
+.social-container img {
+    height: 35px;
+}
+
+.social-text {
+    padding-left: 5px;
+}
+
+.social-container p:nth-of-type(1) {
+    font-size: 13px;
+    padding-bottom: 3px;
+}
+
+.social-container p:nth-of-type(2) {
+    font-size: 14px;
 }
 
 /* ---- Form---- */
