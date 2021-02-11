@@ -2,13 +2,6 @@
 /* ================================= 
   Base Element Styles
 ==================================== */
-
-/* .widget-container-full img,
-.widget-container-half img,
-.social-image img {
-    height: 50px;
-} */
-
 * {
     margin: 0;
     box-sizing: border-box;
@@ -188,7 +181,7 @@ input[type=text] {
 
 .widget-container-half {
     margin-top: 15px;
-    height: 100px;
+    /* height: 100px; */
     background-color: brown;
 }
 
@@ -212,24 +205,51 @@ input[type=text] {
 
 .social-container {
     display: flex;
-
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(184, 184, 184);
+    background-color: rgb(230, 230, 230);
+    padding: 14px 18px;
+    border-radius: 3px;
 }
 
-.social-container img {
-    height: 35px;
+.social-image {
+    border-radius: 50%;
+    background-color: #1E90FF;
+    align-items: center;
+    padding: 7px;
+}
+
+.social-container svg {
+    height: 37px;
+    align-self: auto;
+    fill: #fff;
 }
 
 .social-text {
-    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 7px;
 }
 
 .social-container p:nth-of-type(1) {
-    font-size: 13px;
+    font-size: 16px;
     padding-bottom: 3px;
+    color: #1E90FF;
+    justify-self: center;
 }
 
 .social-container p:nth-of-type(2) {
-    font-size: 14px;
+    font-size: 20px;
+    justify-self: center;
+}
+
+/* ---- New-Members---- */
+
+.row-new-members {
+    margin-top: 15px;
 }
 
 /* ---- Form---- */
