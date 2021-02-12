@@ -50,7 +50,6 @@ main {
 .bell-icon {
     fill: #fff;
     height: 1.5em; /* 16px * 1.5em = 24px */
-    /* margin-right: 5px; */
     border-right: 1px solid gray;
     padding-right: 6px;
 }
@@ -153,7 +152,6 @@ input[type=text] {
     list-style: none;
     display: flex;
     align-items: center;
-    /* margin-right: 5px; */
 }
 
 .traffic-nav-link {
@@ -181,7 +179,6 @@ input[type=text] {
 
 .widget-container-half {
     margin-top: 15px;
-    /* height: 100px; */
     background-color: brown;
 }
 
@@ -249,11 +246,157 @@ input[type=text] {
 /* ---- New-Members---- */
 
 .row-new-members {
+    margin-top: 20px;
+}
+
+.members-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
     margin-top: 15px;
 }
 
-/* ---- Form---- */
+.members-image img {
+    height: 55px;
+    border-radius: 50%;
+}
 
+.members-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 6px;
+}
+
+.members-text p {
+    font-size: 15px;
+}
+
+.members-text a {
+    font-size: 11px;
+    padding-top: 4px;
+}
+
+.members-date {
+    margin-left: auto;
+    font-size: 13px;
+}
+
+/* ---- Recent Activity---- */
+
+.row-recent-activity {
+    margin-top: 20px;
+}
+
+.recent-activity-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+    margin-top: 15px;
+}
+
+.recent-activity-image img {
+    height: 55px;
+    border-radius: 50%;
+}
+
+.recent-activity-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 6px;
+}
+
+.recent-activity-text p:nth-of-type(1) {
+    font-size: 14px;
+}
+
+.recent-activity-text p:nth-of-type(2) {
+    font-size: 11px;
+    padding-top: 4px;
+}
+
+/* ---- Members---- */
+
+.row-message-members {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.widget-container { /* form */
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.widget-container #userField,
+.widget-container textarea,
+.widget-container button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.widget-container #userField {
+    padding-top: 10px;
+}
+
+.widget-container textarea {
+    padding-top: 35px;
+    margin-top: 8px;
+}
+
+.widget-container button {
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+.widget-container .button-primary {
+    padding-top: 15px;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    background-color: #4169E1; /* Royal Blue */
+}
+
+/* ---- settings---- */
+
+.row-settings {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.row-settings .settings-toggle {
+    margin-top: 15px;
+}
+
+.row-settings .form-field {
+    width: 100%;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.row-settings .settings-button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.settings-button .button-primary,
+.settings-button .button-disabled {
+    width: 45%;
+    padding-top: 15px;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+}
+
+.settings-button .button-primary {
+    background-color: #4169E1; /* Royal Blue */
+}
+
+.settings-button .button-disabled {
+    background-color: #C0C0C0; /* Silver */
+}
 
 /* ================================= 
   Media Queries 768px
