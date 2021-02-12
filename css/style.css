@@ -49,7 +49,7 @@ main {
 .bell-icon {
     fill: #fff;
     height: 1.5em; /* 16px * 1.5em = 24px */
-    border-right: 1px solid gray;
+    border-right: 1px solid rgba(128, 127, 127, .5);
     padding-right: 6px;
 }
 
@@ -203,8 +203,8 @@ input[type=text] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid rgb(184, 184, 184);
-    background-color: rgb(230, 230, 230);
+    border: 1px solid rgba(128, 127, 127, .2);
+    background-color: rgb(244, 244, 244);
     padding: 14px 18px;
     border-radius: 3px;
 }
@@ -251,7 +251,7 @@ input[type=text] {
 .members-container {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(128, 127, 127, .5);
     padding-bottom: 15px;
     margin-top: 15px;
 }
@@ -290,7 +290,7 @@ input[type=text] {
 .recent-activity-container {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(128, 127, 127, .5);
     padding-bottom: 15px;
     margin-top: 15px;
 }
@@ -331,17 +331,21 @@ input[type=text] {
 .widget-container #userField,
 .widget-container textarea,
 .widget-container button {
+    border: 1px solid rgba(128, 127, 127, .3);
+    border-radius: 4px;
     width: 100%;
     margin-bottom: 10px;
 }
 
 .widget-container #userField {
     padding-top: 10px;
+    background-color: rgb(244, 244, 244);
 }
 
 .widget-container textarea {
     padding-top: 35px;
     margin-top: 8px;
+    background-color: rgb(244, 244, 244);
 }
 
 .widget-container button {
@@ -370,8 +374,14 @@ input[type=text] {
 
 .row-settings .form-field {
     width: 100%;
+    border: 1px solid rgba(128, 127, 127, .3);
+    border-radius: 4px;
     padding-top: 10px;
     margin-bottom: 10px;
+}
+
+.row-settings #timezone {
+    background-color: rgb(244, 244, 244);
 }
 
 .row-settings .settings-button {
