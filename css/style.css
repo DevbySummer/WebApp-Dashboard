@@ -51,6 +51,7 @@ main {
     height: 1.5em; /* 16px * 1.5em = 24px */
     border-right: 1px solid rgba(128, 127, 127, .5);
     padding-right: 6px;
+    margin-top: 5px;
 }
 
 /* ---- Heading ---- */
@@ -121,7 +122,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 45px;
+    /* height: 45px; */
 }
 
 .headline {
@@ -130,11 +131,23 @@ main {
 }
 
 .row-dashboard-search {
-    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    margin-left: 15px;
+    padding-right: 5px;
+    border-left: 1px solid rgba(128, 127, 127, .3);
+    border-bottom: 1px solid rgba(128, 127, 127, .3);
+    border-bottom-left-radius: 10px;
+    background-color: lightblue;
+    height: 45px;
 }
 
-input[type=text] {
-    width: 60px; /* NOT WORKING!!!! */
+.row-dashboard-search input[type=search] {
+    border: 1px solid rgba(128, 127, 127, .5);
+    border-radius: 4px;
+    font-size: 16px;
 }
 
 /* ---- Traffic---- */
@@ -210,16 +223,23 @@ input[type=text] {
 }
 
 .social-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 74px;
+    width: 74px;
     border-radius: 50%;
     background-color: #1E90FF;
-    align-items: center;
-    padding: 7px;
 }
 
-.social-container svg {
+.social-image svg {
     height: 37px;
     align-self: auto;
     fill: #fff;
+}
+
+.twitter svg {
+    padding-top: 5px;
 }
 
 .social-text {
@@ -338,23 +358,31 @@ input[type=text] {
 }
 
 .widget-container #userField {
-    padding-top: 10px;
+    height: 45px;
+    padding: 10px;
     background-color: rgb(244, 244, 244);
 }
 
 .widget-container textarea {
-    padding-top: 35px;
-    margin-top: 8px;
+    padding: 10px;
+    height: 135px;
     background-color: rgb(244, 244, 244);
 }
 
+.widget-container input::placeholder,
+.widget-container textarea::placeholder {
+  font-size: 14px;
+  color: rgba(128, 127, 127, .8);
+}
+
 .widget-container button {
+    height: 45px;
     margin-top: 8px;
     margin-bottom: 0px;
 }
 
 .widget-container .button-primary {
-    padding-top: 15px;
+    height: 45px;
     border-radius: 4px;
     border: none;
     color: #fff;
@@ -376,12 +404,17 @@ input[type=text] {
     width: 100%;
     border: 1px solid rgba(128, 127, 127, .3);
     border-radius: 4px;
-    padding-top: 10px;
+    height: 45px;
     margin-bottom: 10px;
 }
 
 .row-settings #timezone {
     background-color: rgb(244, 244, 244);
+}
+
+select#timezone.form-field {
+    font-size: 14px;
+    color: rgba(128, 127, 127, .8);
 }
 
 .row-settings .settings-button {
@@ -393,7 +426,7 @@ input[type=text] {
 .settings-button .button-primary,
 .settings-button .button-disabled {
     width: 45%;
-    padding-top: 15px;
+    height: 45px;
     border-radius: 4px;
     border: none;
     color: #fff;
