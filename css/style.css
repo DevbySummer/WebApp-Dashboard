@@ -480,7 +480,7 @@ select#timezone.form-field {
     }
 
     .widget-container-full {
-        width: 90.5vw;
+        width: 95vw;
     }
 
     .widget-container-half {
@@ -532,7 +532,7 @@ select#timezone.form-field {
     header h3 {
         font-size: 12px;
         font-weight: 300;
-        margin-right: 18px;
+        margin-right: 14px;
         margin-left: 6px;
     }
 
@@ -564,48 +564,56 @@ select#timezone.form-field {
     }
     
     .row-dashboard-search {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        flex-grow: 1;
-        margin-left: 15px;
-        padding-right: 5px;
-        border-left: 1px solid rgba(128, 127, 127, .3);
-        border-bottom: 1px solid rgba(128, 127, 127, .3);
-        border-bottom-left-radius: 10px;
-        background-color: lightblue;
-        height: 45px;
+        margin-right: -10px;
     }
     
     .row-dashboard-search input[type=search] {
         border: 1px solid rgba(128, 127, 127, .5);
         border-radius: 4px;
         font-size: 16px;
+        margin-right: 7px;
     }
 
-    /* ---- social-stats---- */
+    /* ---- Traffic ---- */
+
+    .row-traffic {
+        margin-left:0 ;
+        margin-right:0 ;
+    }
+
+    /* ---- Daily---- */
+
+    /* ---- social-stats ---- */
 
     .row-social-stats {
-        margin-bottom: 20px;
+        margin-left: 0;
+        margin-right: 0;
+        /* border-bottom: 1px solid gray; */
     }
 
     .social-container {
         flex-direction: row;
-        width: 30%;
-        height: 90px;
+        width: 28%;
+        height: 75px;
     }
 
     .social-image {
-        height: 60px;
-        width: 60px;
+        height: 50px;
+        width: 55px;
     }
     
     .social-image svg {
-        height: 35px;
+        height: 33px;
     }
     
     .social-text {
         padding-left: 15px;
+    }
+
+    .social-text p:nth-of-type(1) {
+        align-self: flex-start;
+        padding-bottom: 0;
+        font-size: 13px;
     }
     
     .social-container p:nth-of-type(2) {
@@ -616,10 +624,12 @@ select#timezone.form-field {
     /* ---- New Members---- */
 
     .row-new-members {
+        margin-right: 0;
+        /* margin-left: 5px; */
+    }
+
+    .row-new-members h3 {
         margin-top: 20px;
-        border-top: 1px solid gray;
-        border-right: 1px solid gray;
-        border-bottom: 1px solid gray;
     }
     
     .members-container {
@@ -628,10 +638,14 @@ select#timezone.form-field {
         border-bottom: 1px solid rgba(128, 127, 127, .5);
         padding-bottom: 15px;
         margin-top: 15px;
+        margin-right: 20px;
+    }
+
+    .members-container:nth-of-type(4) {
+        border-bottom: none;
     }
 
     section.row-new-members.border-first {
-        margin-left: -10px;
         border-top: 1px solid gray;
         border-bottom: 1px solid gray;
         border-right: 1px solid gray;
@@ -659,35 +673,50 @@ select#timezone.form-field {
     
     .members-date {
         margin-left: auto;
-        font-size: 13px;
+        font-size: 12px;
     }
 
     /* ---- Recent-Activity  ---- */
 
-    section.row-recent-activity.border-second {
+    row-recent-activity {
         /* margin-right: -10px; */
-        border-top: 1px solid gray;
-        border-bottom: 1px solid gray;
-        border-left: 1px solid gray;
     }
 
+    section.row-recent-activity.border-second {
+        margin-left: 0;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        /* border-left: 1px solid gray; */
+    }
+    
+    .recent-activity-container {
+        margin-left: 20px;
+    }
+
+    .row-recent-activity h3 {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .recent-activity-container:nth-of-type(4) {
+        border-bottom: none;
+    }
     /* ---- Message-Members ---- */
 
     section.row-message-members.border-first {
-        /* margin-left: -10px; */
-        border-top: 1px solid gray;
-        border-bottom: 1px solid gray;
+        margin-right: 0;
+        /* border-top: 1px solid gray; */
+        /* border-bottom: 1px solid gray; */
         border-right: 1px solid gray;
     }
 
-    
     /* ---- Settings ---- */
 
     section.row-settings.border-second {
-        /* margin-right: -10px; */
-        border-top: 1px solid gray;
-        border-bottom: 1px solid gray;
-        border-left: 1px solid gray;
+        margin-left: 0;
+        /* border-top: 1px solid gray; */
+        /* border-bottom: 1px solid gray; */
+        /* border-left: 1px solid gray; */
     }
 }
 
