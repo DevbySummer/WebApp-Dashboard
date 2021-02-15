@@ -31,7 +31,7 @@ h3 {
 .grid-container {
     display: grid;
     flex-direction: column;
-    grid-template-columns: 100%;
+    /* grid-template-columns: 100%; causing issues with sizing below 330ish px */
     grid-template-rows: auto;
     grid-template-areas: 
     'header'
@@ -41,8 +41,13 @@ h3 {
 
 main {
     display: grid;
-    margin-left: 7px;
-    margin-right: 7px;
+    /* margin-left: 7px;
+    margin-right: 7px; */
+}
+
+.widget-container-full,
+.widget-container-half {
+    width: 96vw;
 }
 
 /* ---- Icon styles ---- */
@@ -154,7 +159,7 @@ main {
 /* ---- Traffic---- */
 
 .row-traffic {
-    margin-top: 10px;
+    margin: 15px auto;
 }
 
 .traffic-header {
@@ -187,24 +192,24 @@ main {
 /* ---- Daily---- */
 
 .row-daily {
-    margin-top: 20px;
+    margin: 15px auto;
 }
 
 .widget-container-half {
     margin-top: 15px;
-    background-color: brown;
+    /* background-color: brown; */
 }
 
 /* ---- Mobile User---- */
 
 .row-mobile-users {
-    margin-top: 20px;
+    margin: 15px auto;
 }
 
 /* ---- social-stats---- */
 
 .row-social-stats {
-    margin-top: 20px;
+    margin: 15px auto;
 }
 
 .social-container-flex {
@@ -219,7 +224,8 @@ main {
     align-items: center;
     border: 1px solid rgba(128, 127, 127, .2);
     background-color: rgb(244, 244, 244);
-    padding: 14px 18px;
+    padding: 14px 21px;
+    width: 30%;
     border-radius: 3px;
 }
 
@@ -266,7 +272,7 @@ main {
 /* ---- New-Members---- */
 
 .row-new-members {
-    margin-top: 20px;
+    margin: 15px 10px 15px 10px;
 }
 
 .members-container {
@@ -278,7 +284,7 @@ main {
 }
 
 .members-image img {
-    height: 55px;
+    height: 60px;
     border-radius: 50%;
 }
 
@@ -305,7 +311,7 @@ main {
 /* ---- Recent Activity---- */
 
 .row-recent-activity {
-    margin-top: 20px;
+    margin: 15px 10px 15px 10px;
 }
 
 .recent-activity-container {
@@ -339,8 +345,7 @@ main {
 /* ---- Members---- */
 
 .row-message-members {
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin: 15px 10px 15px 10px;
 }
 
 .widget-container { /* form */
@@ -393,8 +398,7 @@ main {
 /* ---- settings---- */
 
 .row-settings {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 15px 10px 15px 10px;
 }
 
 .row-settings .settings-toggle {
@@ -447,18 +451,249 @@ select#timezone.form-field {
 
 @media (min-width: 768px) {
 
-/* ---- Layout Containers ---- */
+    /* ---- Layout Containers ---- */
 
     main {
         grid-template-columns: 50%;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .grid-container {
         grid-template-columns: 55px 1fr;
         grid-template-areas: 
-            'header' 'header'
-            'nav' 'main';
-    }   
+            'header header'
+            'nav main'
+    }
+    
+    .row-dashboard,
+    .row-traffic,
+    .row-social-stats {
+        grid-column: 1 / span 2; /* input in first column and span 1 column width */ 
+    }
+
+    .row-daily,
+    .row-new-members,
+    .row-message-members {
+        grid-column: 1 / span 1;
+    }
+
+    .row-mobile-users,
+    .row-recent-activity,
+    .row-settings {
+        grid-column: 2 / span 1;
+    }
+
+    .widget-container-full {
+        width: 90.5vw;
+    }
+
+    .widget-container-half {
+        width: 48vw;
+    }
+
+    div.widget-container-half.border-first {
+        /* margin-left: -10px; */
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        border-right: 1px solid gray;
+    }
+
+    div.widget-container-half.border-second {
+        /* margin-right: -10px; */
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        border-left: 1px solid gray;
+    }
+
+    /* ---- Header ---- */
+
+    header {
+        display: flex;
+        align-items: center;
+        grid-area: header;
+        background-color: #1E90FF; /* DodgerBlue */
+        height: 50px;
+    }
+    
+    h1 {
+        font-size: 1.1em;
+        letter-spacing: 1px;
+        color: #fff;
+        margin: auto;
+        margin-left: .8em; /* 16px * .8em = 12.8px */
+    }
+    
+    h1 span {
+        font-weight: 300;
+    }
+    
+    header img {
+        height: 30px;
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+    
+    header h3 {
+        font-size: 12px;
+        font-weight: 300;
+        margin-right: 18px;
+        margin-left: 6px;
+    }
+
+    /* ---- Nav ---- */
+
+    nav {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    nav a img {
+        align-self: center;
+        margin-right: 0;
+        margin-top: 17px;
+    }
+
+    /* ---- Dashboard ---- */
+
+    .row-dashboard {
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .headline {
+        font-size: 17px;
+        font-weight: 300;
+        margin-left: 5px;
+    }
+    
+    .row-dashboard-search {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-grow: 1;
+        margin-left: 15px;
+        padding-right: 5px;
+        border-left: 1px solid rgba(128, 127, 127, .3);
+        border-bottom: 1px solid rgba(128, 127, 127, .3);
+        border-bottom-left-radius: 10px;
+        background-color: lightblue;
+        height: 45px;
+    }
+    
+    .row-dashboard-search input[type=search] {
+        border: 1px solid rgba(128, 127, 127, .5);
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    /* ---- social-stats---- */
+
+    .row-social-stats {
+        margin-bottom: 20px;
+    }
+
+    .social-container {
+        flex-direction: row;
+        width: 30%;
+        height: 90px;
+    }
+
+    .social-image {
+        height: 60px;
+        width: 60px;
+    }
+    
+    .social-image svg {
+        height: 35px;
+    }
+    
+    .social-text {
+        padding-left: 15px;
+    }
+    
+    .social-container p:nth-of-type(2) {
+        font-size: 28px;
+        font-weight: 300;
+    }
+
+    /* ---- New Members---- */
+
+    .row-new-members {
+        margin-top: 20px;
+        border-top: 1px solid gray;
+        border-right: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
+    
+    .members-container {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgba(128, 127, 127, .5);
+        padding-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    section.row-new-members.border-first {
+        margin-left: -10px;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        border-right: 1px solid gray;
+    }
+    
+    .members-image img {
+        height: 55px;
+        border-radius: 50%;
+    }
+    
+    .members-text {
+        display: flex;
+        flex-direction: column;
+        padding-left: 6px;
+    }
+    
+    .members-text p {
+        font-size: 15px;
+    }
+    
+    .members-text a {
+        font-size: 11px;
+        padding-top: 4px;
+    }
+    
+    .members-date {
+        margin-left: auto;
+        font-size: 13px;
+    }
+
+    /* ---- Recent-Activity  ---- */
+
+    section.row-recent-activity.border-second {
+        /* margin-right: -10px; */
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        border-left: 1px solid gray;
+    }
+
+    /* ---- Message-Members ---- */
+
+    section.row-message-members.border-first {
+        /* margin-left: -10px; */
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        border-right: 1px solid gray;
+    }
+
+    
+    /* ---- Settings ---- */
+
+    section.row-settings.border-second {
+        /* margin-right: -10px; */
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        border-left: 1px solid gray;
+    }
 }
 
 /* ================================= 
@@ -471,8 +706,8 @@ select#timezone.form-field {
 
     .grid-container {
         grid-template-areas: 
-            'header' 'header'
-            'nav' 'main'
-            'nav' 'main';
+            'header header'
+            'nav main'
+            'nav main';
 }
 }
