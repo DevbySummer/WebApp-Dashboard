@@ -624,7 +624,9 @@ select#timezone.form-field {
     /* ---- New Members---- */
 
     .row-new-members {
+
         margin-right: 0;
+        margin-bottom: 0;
         /* margin-left: 5px; */
     }
 
@@ -678,7 +680,8 @@ select#timezone.form-field {
 
     /* ---- Recent-Activity  ---- */
 
-    row-recent-activity {
+    .row-recent-activity {
+        margin-bottom: 0;
         /* margin-right: -10px; */
     }
 
@@ -703,6 +706,11 @@ select#timezone.form-field {
     }
     /* ---- Message-Members ---- */
 
+    .row-message-members {
+        margin-top: 0;
+        padding-top: 10px;
+    }
+
     section.row-message-members.border-first {
         margin-right: 0;
         /* border-top: 1px solid gray; */
@@ -711,6 +719,11 @@ select#timezone.form-field {
     }
 
     /* ---- Settings ---- */
+
+    .row-settings {
+        margin-top: 0;
+        padding-top: 10px;
+    }
 
     section.row-settings.border-second {
         margin-left: 0;
