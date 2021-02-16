@@ -31,7 +31,6 @@ h3 {
 .grid-container {
     display: grid;
     flex-direction: column;
-    /* grid-template-columns: 100%; causing issues with sizing below 330ish px */
     grid-template-rows: auto;
     grid-template-areas: 
     'header'
@@ -479,22 +478,14 @@ select#timezone.form-field {
         grid-column: 2 / span 1;
     }
 
-    /* .widget-container-full {
-        width: 95vw;
-    }
-
-    .widget-container-half {
-        width: 48vw;
-    } */
-
-    div.widget-container-half.border-first {
+    section.row-daily.border-first {
         /* margin-left: -10px; */
         border-top: 1px solid gray;
         border-bottom: 1px solid gray;
         border-right: 1px solid gray;
     }
 
-    div.widget-container-half.border-second {
+    section.row-mobile-users.border-second {
         /* margin-right: -10px; */
         border-top: 1px solid gray;
         border-bottom: 1px solid gray;
@@ -521,6 +512,15 @@ select#timezone.form-field {
     .members-container:last-of-type,
     .recent-activity-container:last-of-type {
         margin-bottom: 0;
+    }
+
+    /* ---- Icon styles ---- */
+
+    .bell-icon {
+        height: 1em;
+        border-right: 1px solid rgba(128, 127, 127, .5);
+        padding-right: 6px;
+        margin-top: 5px;
     }
 
     /* ---- Header ---- */
@@ -570,6 +570,7 @@ select#timezone.form-field {
         align-self: center;
         margin-right: 0;
         margin-top: 17px;
+        height: 22px;
     }
 
     /* ---- Dashboard ---- */
@@ -585,10 +586,6 @@ select#timezone.form-field {
         margin-left: 12px;
     }
     
-    /* .row-dashboard-search {
-        margin-right: -10px;
-    } */
-    
     .row-dashboard-search input[type=search] {
         border: 1px solid rgba(128, 127, 127, .5);
         border-radius: 4px;
@@ -598,23 +595,45 @@ select#timezone.form-field {
 
     /* ---- Traffic ---- */
 
-    section .row-traffic {
-        margin-right: 10px;
+    .row-traffic h3 {
+        padding-left: 10px;
+    }
+
+    .traffic-nav {
+        padding-right: 10px;
     }
 
     /* ---- Daily---- */
+
+    .row-daily h3 {
+        margin-top: 20px;
+        padding-left: 10px;
+    }
+
+    /* ---- Mobile Users ---- */
+
+    .row-mobile-users h3 {
+        margin-top: 20px;
+        padding-left: 10px;
+    }
 
     /* ---- social-stats ---- */
 
     .row-social-stats {
         margin-left: 0;
         margin-right: 0;
-        /* border-bottom: 1px solid gray; */
+    }
+
+    .row-social-stats h3, 
+    .social-container-flex {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .social-container {
         flex-direction: row;
-        width: 28%;
+        /* width: 28%; */
+        flex-basis: 28%;
         height: 75px;
     }
 
@@ -653,15 +672,13 @@ select#timezone.form-field {
 
     .row-new-members h3 {
         margin-top: 20px;
+        margin-left: 20px;
     }
     
     .members-container {
         display: flex;
         align-items: center;
         border-bottom: 1px solid rgba(128, 127, 127, .5);
-        /* padding-bottom: 15px;
-        margin-top: 15px;
-        margin-right: 20px; */
     }
 
     .members-container:nth-of-type(4) {
@@ -703,19 +720,13 @@ select#timezone.form-field {
 
     .row-recent-activity {
         margin-bottom: 0;
-        /* margin-right: -10px; */
     }
 
     section.row-recent-activity.border-second {
         margin-left: 0;
         border-top: 1px solid gray;
         border-bottom: 1px solid gray;
-        /* border-left: 1px solid gray; */
     }
-    
-    /* .recent-activity-container {
-        margin-left: 20px;
-    } */
 
     .row-recent-activity h3 {
         margin-top: 20px;
@@ -729,29 +740,56 @@ select#timezone.form-field {
 
     .row-message-members {
         margin-top: 0;
-        padding-top: 10px;
+        margin-left: 0;
+        padding-top: 15px;
+    }
+
+    .row-message-members h3 {
+        padding-left: 20px;
+
+    }
+    .row-message-members form {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     section.row-message-members.border-first {
         margin-right: 0;
-        /* border-top: 1px solid gray; */
-        /* border-bottom: 1px solid gray; */
         border-right: 1px solid gray;
     }
 
     /* ---- Settings ---- */
 
     .row-settings {
+        margin-left: 0;
         margin-top: 0;
-        padding-top: 10px;
+        padding-top: 15px;
     }
 
+    .row-settings h3 {
+        padding-left: 20px;
+    }
+
+    .row-settings-container {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    /* .row-settings .settings-toggle {
+        padding-left: 15px;
+    }
+
+    select#timezone.form-field {
+        margin-left: 15px;
+    }
+
+    .row-settings .settings-button {
+        padding-left: 15px;
+        /* padding-right: 15px; */
+    }
+     */
     section.row-settings.border-second {
         margin-left: 0;
-        /* border-top: 1px solid gray; */
-        /* border-bottom: 1px solid gray; */
-        /* border-left: 1px solid gray; */
-    }
 }
 
 /* ================================= 
