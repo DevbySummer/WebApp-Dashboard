@@ -11,7 +11,8 @@ body {
     font-family: 'Roboto', arial, sans-serif;
     line-height: 1.2;
     letter-spacing: 1.1px;
-    color: #383838;
+    /* color: #383838; */
+    color: #708090;
 }
 
 h3 {
@@ -20,6 +21,7 @@ h3 {
     letter-spacing: .5px;
     margin-right: auto;
     align-self: center;
+    color: #708090;
 }
 
 /* ================================= 
@@ -139,7 +141,7 @@ main {
     padding-right: 5px;
     border-left: 1px solid rgba(128, 127, 127, .3);
     border-bottom: 1px solid rgba(128, 127, 127, .3);
-    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 6px;
     background-color: lightblue;
     height: 45px;
 }
@@ -391,9 +393,9 @@ main {
 
 /* ---- settings---- */
 
-.row-settings {
+/* .row-settings {
     margin: 15px 10px 15px 10px;
-}
+} */
 
 .row-settings .settings-toggle {
     margin-top: 15px;
@@ -534,7 +536,7 @@ select#timezone.form-field {
     }
     
     h1 {
-        font-size: 1.1em;
+        font-size: 1em;
         letter-spacing: 1px;
         color: #fff;
         margin: auto;
@@ -581,9 +583,13 @@ select#timezone.form-field {
     }
     
     .headline {
-        font-size: 17px;
+        font-size: 15px;
         font-weight: 300;
         margin-left: 12px;
+    }
+
+    .row-dashboard-search {
+        height: 50px;
     }
     
     .row-dashboard-search input[type=search] {
@@ -596,25 +602,34 @@ select#timezone.form-field {
     /* ---- Traffic ---- */
 
     .row-traffic h3 {
-        padding-left: 10px;
+        /* font-weight: 300; */
+        padding-left: 14px;
     }
 
     .traffic-nav {
         padding-right: 10px;
     }
 
+    .traffic-nav-link {
+        padding-left: 10px;
+    }
+
+    .traffic-nav-link:nth-of-type(3) { 
+    margin-left: 10px;
+    }
+
     /* ---- Daily---- */
 
     .row-daily h3 {
         margin-top: 20px;
-        padding-left: 10px;
+        padding-left: 14px;
     }
 
     /* ---- Mobile Users ---- */
 
     .row-mobile-users h3 {
         margin-top: 20px;
-        padding-left: 10px;
+        padding-left: 14px;
     }
 
     /* ---- social-stats ---- */
@@ -626,8 +641,8 @@ select#timezone.form-field {
 
     .row-social-stats h3, 
     .social-container-flex {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 14px;
+        padding-right: 14px;
     }
 
     .social-container {
@@ -671,14 +686,15 @@ select#timezone.form-field {
     }
 
     .row-new-members h3 {
-        margin-top: 20px;
-        margin-left: 20px;
+        margin-top: 18px;
+        margin-left: 18px;
     }
     
     .members-container {
         display: flex;
         align-items: center;
         border-bottom: 1px solid rgba(128, 127, 127, .5);
+        padding-left: 3px;
     }
 
     .members-container:nth-of-type(4) {
@@ -692,7 +708,7 @@ select#timezone.form-field {
     }
     
     .members-image img {
-        height: 55px;
+        height: 50px;
         border-radius: 50%;
     }
     
@@ -703,7 +719,7 @@ select#timezone.form-field {
     }
     
     .members-text p {
-        font-size: 15px;
+        font-size: 13px;
     }
     
     .members-text a {
@@ -774,20 +790,7 @@ select#timezone.form-field {
         margin-left: 15px;
         margin-right: 15px;
     }
-
-    /* .row-settings .settings-toggle {
-        padding-left: 15px;
-    }
-
-    select#timezone.form-field {
-        margin-left: 15px;
-    }
-
-    .row-settings .settings-button {
-        padding-left: 15px;
-        /* padding-right: 15px; */
-    }
-     */
+    
     section.row-settings.border-second {
         margin-left: 0;
 }
