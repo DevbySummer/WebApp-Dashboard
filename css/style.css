@@ -40,11 +40,6 @@ h3 {
     'main';
 }
 
-.widget-container-full,
-.widget-container-half {
-    width: 96vw;
-}
-
 /* ---- Icon styles ---- */
 
 .bell-icon {
@@ -103,14 +98,14 @@ nav {
 
 nav a img {
     color: #fff;
-    height: 30px;
-    margin-right: 22px;
+    height: 28px;
+    margin-right: 18px;
 }
 
 nav a:nth-of-type(1) {
     border: 1px solid green;
-    align-self: center;
 }
+
 
 /* ================================= 
   Main
@@ -154,12 +149,14 @@ main {
     border: 1px solid rgba(128, 127, 127, .5);
     border-radius: 4px;
     font-size: 16px;
+    padding-left: 10px;
 }
 
 /* ---- Traffic---- */
 
 .row-traffic {
     margin: 15px auto;
+    width: 100%;
 }
 
 .traffic-header {
@@ -596,12 +593,8 @@ select#timezone.form-field {
         height: 50px;
     }
     
-    .row-dashboard-search input[type=search] {
-        border: 1px solid rgba(128, 127, 127, .5);
-        border-radius: 4px;
-        font-size: 16px;
-        margin-right: 7px;
-        /* width: 45%; */
+    .row-dashboard-search input[type="search"] {
+        flex-basis: 40%;
     }
 
     /* ---- Traffic ---- */
