@@ -189,7 +189,7 @@ main {
 /* ---- Daily---- */
 
 .row-daily {
-    margin: 15px auto;
+    margin: 15px 0;
 }
 
 .widget-container-half {
@@ -200,7 +200,7 @@ main {
 /* ---- Mobile User---- */
 
 .row-mobile-users {
-    margin: 15px auto;
+    margin: 15px 0;
 }
 
 /* ---- social-stats---- */
