@@ -519,7 +519,7 @@ select#timezone.form-field {
     /* ---- Icon styles ---- */
 
     .bell-icon {
-        height: 1em;
+        height: 1.1em;
         border-right: 1px solid rgba(128, 127, 127, .5);
         padding-right: 6px;
         margin-top: 5px;
@@ -585,7 +585,7 @@ select#timezone.form-field {
     .headline {
         font-size: 15px;
         font-weight: 300;
-        margin-left: 12px;
+        margin-left: 16px;
     }
 
     .row-dashboard-search {
@@ -603,7 +603,7 @@ select#timezone.form-field {
 
     .row-traffic h3 {
         /* font-weight: 300; */
-        padding-left: 14px;
+        padding-left: 18px;
     }
 
     .traffic-nav {
@@ -622,14 +622,14 @@ select#timezone.form-field {
 
     .row-daily h3 {
         margin-top: 20px;
-        padding-left: 14px;
+        padding-left: 18px;
     }
 
     /* ---- Mobile Users ---- */
 
     .row-mobile-users h3 {
         margin-top: 20px;
-        padding-left: 14px;
+        padding-left: 18px;
     }
 
     /* ---- social-stats ---- */
@@ -641,8 +641,8 @@ select#timezone.form-field {
 
     .row-social-stats h3, 
     .social-container-flex {
-        padding-left: 14px;
-        padding-right: 14px;
+        padding-left: 18px;
+        padding-right: 18px;
     }
 
     .social-container {
@@ -654,11 +654,15 @@ select#timezone.form-field {
 
     .social-image {
         height: 50px;
-        width: 55px;
+        width: 50px;
     }
     
     .social-image svg {
         height: 33px;
+    }
+
+    .social-container:nth-of-type(3) .social-image svg {
+        height: 29px;
     }
     
     .social-text {
@@ -719,17 +723,17 @@ select#timezone.form-field {
     }
     
     .members-text p {
-        font-size: 13px;
+        font-size: 12px;
     }
     
     .members-text a {
-        font-size: 11px;
+        font-size: 10px;
         padding-top: 4px;
     }
     
     .members-date {
         margin-left: auto;
-        font-size: 12px;
+        font-size: 10px;
     }
 
     /* ---- Recent-Activity  ---- */
@@ -745,8 +749,21 @@ select#timezone.form-field {
     }
 
     .row-recent-activity h3 {
-        margin-top: 20px;
+        margin-top: 18px;
         margin-left: 20px;
+    }
+
+    .recent-activity-image img {
+        height: 50px;
+    }
+    
+    .recent-activity-text p:nth-of-type(1) {
+        font-size: 12px;
+    }
+    
+    .recent-activity-text p:nth-of-type(2) {
+        font-size: 10px;
+        padding-top: 4px;
     }
 
     .recent-activity-container:nth-of-type(4) {
@@ -808,5 +825,135 @@ select#timezone.form-field {
             'header header'
             'nav main'
             'nav main';
-}
+    }
+
+    /* ---- Icon styles ---- */
+
+    .bell-icon {
+        height: 1.2em;
+        border-right: 1px solid rgba(128, 127, 127, .5);
+        padding-right: 6px;
+        margin-top: 5px;
+    }
+
+    /* ---- Nav ---- */
+
+    nav a img {
+        align-self: center;
+        margin-right: 0;
+        margin-top: 19px;
+        height: 25px;
+    }
+
+    /* ---- Traffic ---- */
+
+    .traffic-nav-link {
+        padding-left: 13px;
+    }
+
+    .traffic-nav-link:nth-of-type(3) { 
+    margin-left: 13px;
+    }
+
+    /* ---- social-stats ---- */
+
+    .row-social-stats {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .row-social-stats h3, 
+    .social-container-flex {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .social-container {
+        flex-direction: row;
+        flex-basis: 30%;
+        height: 90px;
+    }
+
+    .social-image {
+        height: 60px;
+        width: 60px;
+    }
+    
+    .social-image svg {
+        height: 34px;
+    }
+    
+    .social-container:nth-of-type(3) .social-image svg {
+        height: 30px;
+    }
+
+    .social-text {
+        padding-left: 18px;
+    }
+
+    .social-text p:nth-of-type(1) {
+        align-self: flex-start;
+        padding-bottom: 0;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    
+    .social-container p:nth-of-type(2) {
+        font-size: 36px;
+        font-weight: 300;
+    }
+
+    /* ---- New Members---- */
+    
+    .members-image img {
+        height: 45px;
+        border-radius: 50%;
+    }
+    
+    .members-text {
+        display: flex;
+        flex-direction: column;
+        padding-left: 6px;
+    }
+    
+    .members-text p {
+        font-size: 12px;
+    }
+    
+    .members-text a {
+        font-size: 10px;
+        padding-top: 4px;
+    }
+    
+    .members-date {
+        margin-left: auto;
+        font-size: 11px;
+    }
+
+    /* ---- Recent-Activity  ---- */
+
+    .recent-activity-image img {
+        height: 45px;
+    }
+    
+    .recent-activity-text p:nth-of-type(1) {
+        font-size: 12px;
+    }
+    
+    .recent-activity-text p:nth-of-type(2) {
+        font-size: 10px;
+        padding-top: 4px;
+    }
+
+    .recent-activity-container:nth-of-type(4) {
+        border-bottom: none;
+    }
+
+    /* ---- Message-Members ---- */
+
+    /* ---- Settings ---- */
+
+    select#timezone.form-field {
+        padding-left: 5px;
+    }
 }
