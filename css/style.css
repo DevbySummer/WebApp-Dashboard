@@ -161,6 +161,7 @@ main {
 
 .traffic-header {
     display: flex;
+    padding: 0 15px;
 }
 
 .traffic-nav {
@@ -190,6 +191,7 @@ main {
 
 .row-daily {
     margin: 15px 0;
+    padding: 0 15px;
 }
 
 .widget-container-half {
@@ -201,6 +203,7 @@ main {
 
 .row-mobile-users {
     margin: 15px 0;
+    padding: 0 15px;
 }
 
 /* ---- social-stats---- */
@@ -222,7 +225,7 @@ main {
     border: 1px solid rgba(128, 127, 127, .2);
     background-color: rgb(244, 244, 244);
     padding: 14px 21px;
-    width: 30%;
+    flex-basis: 30%;
     border-radius: 3px;
 }
 
