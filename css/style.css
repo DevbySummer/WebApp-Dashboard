@@ -89,17 +89,28 @@ header h3 {
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     grid-area: nav;
     background-color: #483D8B; /* DarkSlateBlue */
     height: 45px;
 }
 
+nav a {
+    height: 100%;
+    width: 56px;
+    display: flex;
+    border: 3px solid transparent;
+}
+
+nav a:first-of-type {
+    border-bottom: 3px solid lightgreen;
+}
+
 nav a img {
     color: #fff;
     height: 28px;
-    margin-right: 18px;
+    margin: auto;
 }
 
 /* ================================= 
@@ -569,12 +580,23 @@ select#timezone.form-field {
         justify-content: flex-start;
     }
 
-    nav a img {
+    nav a {
+        height: 56px;
+        width: 100%;
+        margin: 5px auto;
+    }
+
+    nav a:first-of-type {
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid lightgreen;
+    }
+
+    /* nav a img {
         align-self: center;
         margin-right: 0;
         margin-top: 17px;
         height: 22px;
-    }
+    } */
 
     /* ---- Dashboard ---- */
 
@@ -836,12 +858,12 @@ select#timezone.form-field {
 
     /* ---- Nav ---- */
 
-    nav a img {
+    /* nav a img {
         align-self: center;
         margin-right: 0;
         margin-top: 19px;
         height: 25px;
-    }
+    } */
 
     /* Dashboard */
 
