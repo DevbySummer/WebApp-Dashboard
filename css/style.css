@@ -102,11 +102,6 @@ nav a img {
     margin-right: 18px;
 }
 
-nav a:nth-of-type(1) {
-    border: 1px solid green;
-}
-
-
 /* ================================= 
   Main
 ==================================== */
@@ -209,7 +204,9 @@ main {
 /* ---- social-stats---- */
 
 .row-social-stats {
-    margin: 15px auto;
+    margin: 15px 0;
+    widows: 100%;
+    padding: 0 15px;
 }
 
 .social-container-flex {
@@ -225,7 +222,7 @@ main {
     border: 1px solid rgba(128, 127, 127, .2);
     background-color: rgb(244, 244, 244);
     padding: 14px 21px;
-    flex-basis: 30%;
+    flex-basis: 25%;
     border-radius: 3px;
 }
 
@@ -397,9 +394,9 @@ main {
 
 /* ---- settings---- */
 
-/* .row-settings {
-    margin: 15px 10px 15px 10px;
-} */
+.row-settings {
+    margin: 15px 10px;
+}
 
 .row-settings .settings-toggle {
     margin-top: 15px;
