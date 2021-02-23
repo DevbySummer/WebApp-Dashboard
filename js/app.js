@@ -52,3 +52,34 @@ let trafficChart = new Chart(trafficCanvas, {
     data: trafficData,
     options: trafficOptions
 });
+
+const dailyCanvas = document.getElementById('daily-canvas');
+
+const dailyData = {
+    labels: ["S", "M", "T", "W", "T", "F", "S"],
+    datasets: [{
+        label: '# of Hits',
+        data: [75, 115, 175, 125, 225, 200, 100],
+        backgroundColor: '#7477BF',
+        borderWidth: 1
+    }]
+};
+
+dailyOptions = {
+    scales: {
+        yAxis: [{
+            ticks: {
+                beginAtZero: true
+            }
+        }]
+    },
+    legend: {
+        display: false
+    }
+};
+
+let dailyChart = new Chart(dailyCanvas, {
+    type: 'bar',
+    data: dailyData,
+    options: dailyOptions
+});
