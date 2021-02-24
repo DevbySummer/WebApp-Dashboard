@@ -120,3 +120,21 @@ const mobileChart = new Chart(mobileCanvas, {
 
 // -------------- Messaging Section --------------
 
+const user = document.getElementById('userField');
+const message = document.getElementById('messageField');
+const send = document.getElementById('send');
+// Event Listener for send
+send.addEventListener('click', () => {
+    if (user.value === "" && message.value === "") {
+        alert('User and Message fields must be filled out');
+    }
+    else if (user.value === "") {
+        alert('User field must be filled out');
+    }
+    else if (message.value === "") {
+        alert('Message field must be filled out');
+    }
+    else {
+        alert(`Message successfully sent to: ${user.value}`);
+    }   
+});
