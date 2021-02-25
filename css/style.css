@@ -83,7 +83,7 @@ h1 {
     letter-spacing: 1px;
     color: #fff;
     margin: auto;
-    margin-left: .8em; /* 16px * .8em = 12.8px */
+    margin-left: .6em;
 }
 
 h1 span {
@@ -107,7 +107,8 @@ header h3 {
 
 nav {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    justify-content: center;
     align-items: center;
     grid-area: nav;
     background-color: #483D8B; /* DarkSlateBlue */
@@ -151,8 +152,8 @@ main {
 }
 
 .headline {
-    font-size: 19px;
-    margin-left: 5px;
+    font-size: 17px;
+    margin-left: 13px;
 }
 
 .row-dashboard-search {
@@ -160,7 +161,7 @@ main {
     align-items: center;
     justify-content: flex-end;
     flex-grow: 1;
-    margin-left: 15px;
+    margin-left: 10px;
     padding-right: 5px;
     border-left: 1px solid rgba(128, 127, 127, .3);
     border-bottom: 1px solid rgba(128, 127, 127, .3);
@@ -438,6 +439,29 @@ main {
 
 .settings-toggle input strong {
     padding-bottom: 10px;
+}
+
+label.switch-light.switch-candy {
+    display: flex;
+    align-items: center;
+}
+
+.switch-light.switch-candy strong {
+    flex-basis: 225px;
+}
+
+.switch-light span span {
+    width: 50px;
+}
+
+.switch-light.switch-candy > span,
+.switch-candy a 
+{
+    border-radius: 25px;
+}
+
+.switch-candy a {
+    z-index: 10;
 }
 
 .row-settings .form-field {
@@ -859,15 +883,36 @@ select#timezone.form-field {
         margin-left: 0;
     }
 
+    .row-settings .settings-toggle {
+        padding-bottom: 30px;
+    }
+    
+    .settings-toggle label:last-of-type {
+        padding-top: 10px;
+    }
+    
+    .settings-toggle strong {
+        font-size: 13px;
+    }
+    
     label.switch-light.switch-candy {
         display: flex;
         align-items: center;
-        /* justify-content: space-around; */
+    }
+    
+    .switch-light.switch-candy strong {
+        flex-basis: 225px;
+    }
+    
+    .switch-light span span {
+        width: 45px;
+        height: 15px;
     }
 
-    .settings-toggle span {
-        
+    .row-settings-container .form-field {
+        margin-top: 20px;
     }
+
 }
 
     
@@ -1025,4 +1070,5 @@ select#timezone.form-field {
     select#timezone.form-field {
         padding-left: 5px;
     }
+    
 }
