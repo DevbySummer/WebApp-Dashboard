@@ -54,6 +54,22 @@ canvas {
     margin-top: 5px;
 }
 
+@keyframes grow {
+    0% {
+        transform: scale(0);
+    }
+    30% {
+        transform: scale(1.1);
+    }
+    60% {
+        transform: scale(0.9);
+    }
+}
+
+.bell-icon:hover {
+    animation: grow 1s ease-out backwards;
+}
+
 header > div {
     position: relative;
 }
@@ -177,16 +193,36 @@ main {
     padding-left: 10px;
 }
 
+/* ---- Alert---- */
+
+.row-alert {
+    margin: 15px 0;
+    padding: 0 15px;
+    font-size: 12px;
+}
+
+.row-alert .alert-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #483D8B;
+    color: #fff;
+    height: 30px;
+    border-radius: 4px;
+}
+
 /* ---- Traffic---- */
 
 .row-traffic {
-    margin: 15px auto;
-    width: 100%;
+    /* margin: 15px auto;
+    width: 100%; */
+    margin: 15px 0;
+    padding: 0 15px;
 }
 
 .traffic-header {
     display: flex;
-    padding: 0 15px;
+    padding: 0 0px;
 }
 
 .traffic-nav {
@@ -526,6 +562,7 @@ select#timezone.form-field {
     }
     
     .row-dashboard,
+    .row-alert,
     .row-traffic,
     .row-social-stats {
         grid-column: 1 / span 2; /* input in first column and span 1 column width */ 
@@ -619,7 +656,7 @@ select#timezone.form-field {
     header h3 {
         font-size: 12px;
         font-weight: 300;
-        margin-right: 14px;
+        margin-right: 20px;
         margin-left: 6px;
     }
 
@@ -659,26 +696,50 @@ select#timezone.form-field {
     .headline {
         font-size: 15px;
         font-weight: 300;
-        margin-left: 16px;
+        margin-left: 20px;
     }
 
     .row-dashboard-search {
         height: 50px;
+        padding-right: 18px;
     }
     
     .row-dashboard-search input[type="search"] {
         flex-basis: 40%;
     }
 
+    /* ---- Alert---- */
+
+    .row-alert {
+        margin: 15px 0;
+        padding: 0 15px;
+        font-size: 12px;
+    }
+
+    .row-alert .alert-banner {
+        justify-content: space-between;
+        height: 30px;
+    }
+
+    .alert-banner > p {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
     /* ---- Traffic ---- */
 
+    .row-traffic {
+        margin: 15px auto;
+        width: 100%;
+        padding: 0 10px;
+    }
+
     .row-traffic h3 {
-        /* font-weight: 300; */
-        padding-left: 18px;
+        padding-left: 13px;
     }
 
     .traffic-nav {
-        padding-right: 10px;
+        padding-right: 12px;
     }
 
     .traffic-nav-link {
@@ -693,14 +754,18 @@ select#timezone.form-field {
 
     .row-daily h3 {
         margin-top: 20px;
-        padding-left: 18px;
+        padding-left: 12px;
+    }
+
+    .widget-container-half > canvas {
+        padding-bottom: 15px; 
     }
 
     /* ---- Mobile Users ---- */
 
     .row-mobile-users h3 {
         margin-top: 20px;
-        padding-left: 18px;
+        padding-left: 12px;
     }
 
     /* ---- social-stats ---- */
@@ -712,7 +777,7 @@ select#timezone.form-field {
 
     .row-social-stats h3, 
     .social-container-flex {
-        padding-left: 18px;
+        padding-left: 10px;
         padding-right: 18px;
     }
 
@@ -762,14 +827,14 @@ select#timezone.form-field {
 
     .row-new-members h3 {
         margin-top: 18px;
-        margin-left: 18px;
+        margin-left: 22px;
     }
     
     .members-container {
         display: flex;
         align-items: center;
         border-bottom: 1px solid rgba(128, 127, 127, .5);
-        padding-left: 3px;
+        padding-left: 5px;
     }
 
     .members-container:nth-of-type(4) {
@@ -821,7 +886,11 @@ select#timezone.form-field {
 
     .row-recent-activity h3 {
         margin-top: 18px;
-        margin-left: 20px;
+        margin-left: 22px;
+    }
+
+    .recent-activity-container {
+        padding-left: 5px;
     }
 
     .recent-activity-image img {
@@ -957,6 +1026,25 @@ select#timezone.form-field {
         border-radius: 4px;
         font-size: 16px;
         /* flex-basis: 45%; */
+    }
+
+    /* ---- Alert---- */
+
+    .row-alert {
+        margin: 15px 0;
+        padding: 0 15px;
+        font-size: 12px;
+    }
+
+    .row-alert .alert-banner {
+        justify-content: space-between;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .alert-banner > p {
+        padding-left: 7px;
+        padding-right: 7px;
     }
 
     /* ---- Traffic ---- */
