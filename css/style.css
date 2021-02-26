@@ -587,16 +587,16 @@ select#timezone.form-field {
 
     section.row-daily.border-first {
         /* margin-left: -10px; */
-        border-top: 1px solid gray;
-        border-bottom: 1px solid gray;
+        border-top: 1px solid rgb(194, 196, 195);
+        border-bottom: 1px solid rgb(194, 196, 195);
         /* border-right: 1px solid gray; */
     }
 
     section.row-mobile-users.border-second {
         /* margin-right: -10px; */
-        border-top: 1px solid gray;
-        border-bottom: 1px solid gray;
-        border-left: 1px solid gray;
+        border-top: 1px solid rgb(194, 196, 195);
+        border-bottom: 1px solid rgb(194, 196, 195);
+        border-left: 1px solid rgb(194, 196, 195);
     }
 
     .row-daily,
@@ -846,9 +846,9 @@ select#timezone.form-field {
     }
 
     section.row-new-members.border-first {
-        border-top: 1px solid gray;
-        border-bottom: 1px solid gray;
-        border-right: 1px solid gray;
+        border-top: 1px solid rgb(194, 196, 195);
+        border-bottom: 1px solid rgb(194, 196, 195);
+        border-right: 1px solid rgb(194, 196, 195);
     }
     
     .members-image img {
@@ -884,8 +884,8 @@ select#timezone.form-field {
 
     section.row-recent-activity.border-second {
         margin-left: 0;
-        border-top: 1px solid gray;
-        border-bottom: 1px solid gray;
+        border-top: 1px solid rgb(194, 196, 195);
+        border-bottom: 1px solid rgb(194, 196, 195);
     }
 
     .row-recent-activity h3 {
@@ -932,7 +932,7 @@ select#timezone.form-field {
 
     section.row-message-members.border-first {
         margin-right: 0;
-        border-right: 1px solid gray;
+        border-right: 1px solid rgb(194, 196, 195);
     }
 
     /* ---- Settings ---- */
