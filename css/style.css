@@ -405,6 +405,10 @@ main {
     padding-top: 4px;
 }
 
+.recent-activity-container .arrow {
+    margin-left: auto;
+}
+
 /* ---- Members---- */
 
 .row-message-members {
