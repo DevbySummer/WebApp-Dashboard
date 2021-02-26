@@ -56,7 +56,7 @@ canvas {
 
 @keyframes grow {
     0% {
-        transform: scale(0);
+        transform: scale(0.9);
     }
     30% {
         transform: scale(1.1);
@@ -81,7 +81,7 @@ header > div {
     height: 5px;
     width: 5px;
     border-radius: 50%;
-    background-color: lightgreen;
+    background-color: #eaac8b;
 }
 
 /* ---- Heading ---- */
@@ -90,7 +90,7 @@ header {
     display: flex;
     align-items: center;
     grid-area: header;
-    background-color: #1E90FF; /* DodgerBlue */
+    background-color: #6d597a; /* DodgerBlue */
     height: 50px;
 }
 
@@ -127,7 +127,7 @@ nav {
     justify-content: center;
     align-items: center;
     grid-area: nav;
-    background-color: #483D8B; /* DarkSlateBlue */
+    background-color: #355070; /* DarkSlateBlue */
     height: 45px;
 }
 
@@ -139,7 +139,7 @@ nav a {
 }
 
 nav a:first-of-type {
-    border-bottom: 3px solid lightgreen;
+    border-bottom: 3px solid #eaac8b;
 }
 
 nav a img {
@@ -182,7 +182,7 @@ main {
     border-left: 1px solid rgba(128, 127, 127, .3);
     border-bottom: 1px solid rgba(128, 127, 127, .3);
     border-bottom-left-radius: 6px;
-    background-color: lightblue;
+    background-color: #b56576;
     height: 45px;
 }
 
@@ -205,7 +205,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #483D8B;
+    background-color: #6d597a;
     color: #fff;
     height: 30px;
     border-radius: 4px;
@@ -237,7 +237,7 @@ main {
 }
 
 .traffic-nav-link:nth-of-type(3) {
-    background-color: green;
+    background-color: #b56576;
     padding: 5px 3px;
     border-radius: 35%;
     color: #fff;
@@ -299,7 +299,7 @@ main {
     height: 74px;
     width: 74px;
     border-radius: 50%;
-    background-color: #1E90FF;
+    background-color: #eaac8b;
 }
 
 .social-image svg {
@@ -323,7 +323,7 @@ main {
 .social-container p:nth-of-type(1) {
     font-size: 16px;
     padding-bottom: 3px;
-    color: #1E90FF;
+    color: #e56b6f;
     justify-self: center;
 }
 
@@ -459,7 +459,7 @@ main {
     border-radius: 4px;
     border: none;
     color: #fff;
-    background-color: #4169E1; /* Royal Blue */
+    background-color: #e56b6f; /* Royal Blue */
 }
 
 /* ---- settings---- */
@@ -537,11 +537,11 @@ select#timezone.form-field {
 }
 
 .settings-button .button-primary {
-    background-color: #4169E1; /* Royal Blue */
+    background-color: #e56b6f; /* Royal Blue */
 }
 
 .settings-button .button-disabled {
-    background-color: #C0C0C0; /* Silver */
+    background-color: #eaac8b; /* Silver */
 }
 
 /* ================================= 
@@ -635,7 +635,6 @@ select#timezone.form-field {
         display: flex;
         align-items: center;
         grid-area: header;
-        background-color: #1E90FF; /* DodgerBlue */
         height: 50px;
     }
     
@@ -680,7 +679,7 @@ select#timezone.form-field {
 
     nav a:first-of-type {
         border-bottom: 3px solid transparent;
-        border-left: 3px solid lightgreen;
+        border-left: 3px solid #eaac8b;
     }
 
     /* nav a img {
