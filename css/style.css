@@ -172,7 +172,7 @@ main {
 
 .headline {
     font-size: 17px;
-    margin-left: 13px;
+    padding: 0 15px;
 }
 
 .row-dashboard-search {
@@ -180,7 +180,7 @@ main {
     align-items: center;
     justify-content: flex-end;
     flex-grow: 1;
-    margin-left: 10px;
+    max-width: 175px;
     padding-right: 5px;
     border-left: 1px solid rgba(128, 127, 127, .3);
     border-bottom: 1px solid rgba(128, 127, 127, .3);
@@ -280,6 +280,7 @@ main {
 
 .social-container-flex {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 15px;
 }
@@ -291,7 +292,7 @@ main {
     border: 1px solid rgba(128, 127, 127, .2);
     background-color: rgb(244, 244, 244);
     padding: 14px 21px;
-    flex-basis: 25%;
+    flex-basis: 100%;
     border-radius: 3px;
 }
 
@@ -343,6 +344,7 @@ main {
 
 .members-container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     border-bottom: 1px solid rgba(128, 127, 127, .5);
     padding-bottom: 15px;
@@ -490,7 +492,8 @@ label.switch-light.switch-candy {
 }
 
 .switch-light.switch-candy strong {
-    flex-basis: 225px;
+    flex-basis: 200px;
+    font-size: 14px;
 }
 
 .switch-light span span {
